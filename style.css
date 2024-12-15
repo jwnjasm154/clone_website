@@ -67,9 +67,13 @@ label:focus a {
     visibility: visible;
 }
 
-/* #getTutorialContact:checked~.headerNavBar .left-side {
-    background-color: aqua;
-} */
+#getTutorialContact:checked~.headerNavBar .left-side.tutorialsLabel {
+    background-color: #282A35;
+    color: white;
+}
+
+
+
 .childHeaderNavBar button {
     /* font-size: 15px; */
     width: 31px;
@@ -204,7 +208,7 @@ padding: 8px 16px;
 }
 
 .imageNavBar {
-    content: url("screenshot_1.png");
+    content: url("navBarIcon.png");
     width: 38px;
     margin: 0;
     padding: 6px;
@@ -215,6 +219,18 @@ padding: 8px 16px;
 
     content: url("navBarIconHover.png");
 
+}
+
+.margin-10 {
+    margin-left: 110px !important;
+}
+
+.margin-100 {
+    margin-left: 320px !important;
+}
+
+.learnSectionContent-left p {
+    width: 315px;
 }
 
 .itemNavBarIcon {
@@ -1049,7 +1065,7 @@ a#frontBtn:hover {
 }
 
 #footerImage {
-    content: url("CnP_14122024_185212.png");
+    content: url("iconFooter.png");
     width: 38px;
     margin: 0;
     padding: 6px;
