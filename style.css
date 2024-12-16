@@ -1243,7 +1243,7 @@ a#frontBtn:hover {
 
 #footerPageContent {
     padding-top: 32px;
-    background-image: url(lynx_landing.webp), url(background_in_space.webp);
+    background-image: url("image/lynx_landing.webp"), url("image/background_in_space.webp");
     background-color: #282A35;
     background-repeat: no-repeat, repeat;
     background-position: right bottom, center center;
@@ -1251,7 +1251,7 @@ a#frontBtn:hover {
 
 #footerImage {
     content: url("image/iconFooter.png");
-    width: 38px;
+    width: 45px;
     margin: 0;
     padding: 6px;
     float: left;
@@ -1267,8 +1267,14 @@ a#frontBtn:hover {
     text-decoration: underline;
 }
 
+#footerPageContent-m {
+    margin-left: 80px;
+
+}
+
 #footerTableOne {
     border-spacing: 20px;
+    margin-left: 85px;
 }
 
 #footerTableTwo h5 {
