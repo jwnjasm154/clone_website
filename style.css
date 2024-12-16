@@ -49,14 +49,86 @@
     font-size: 12px;
 } */
 #tutorialContact {
+    padding: 35px 0px 60px;
     position: fixed;
     /* top: 81px; */
     top: 48px;
     width: 100%;
-    background-color: #cbcbcb93;
+    background-color: #282A35;
     z-index: 5;
     height: 500px;
+    /* visibility: visible; */
+    overflow: auto;
     visibility: hidden;
+}
+
+#tutorialContact input {
+    position: relative;
+
+    border-radius: 25px;
+    color: white;
+    background-color: #464646;
+    border: 2px solid #535252;
+    padding: 15px 25px;
+    margin: 5px 0px 10px;
+}
+
+.tutorialContactContainer {
+    font-size: 18px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto 25px;
+}
+
+#tutorialContact input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+#tutorialContact input:focus {
+    outline: 0;
+    border: #5AC05A 2px solid;
+}
+
+#tutorialContact b {
+    width: 300px;
+    padding: 110px;
+    margin-right: 20px;
+    color: #fff4A3;
+    font-size: 32px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+#tutorialTable {
+    border-spacing: 100px 15px;
+}
+
+#tutorialContact th {
+    font-size: 24px;
+    margin: 35px 0px;
+    padding: 35px 0px 10px;
+}
+
+#tutorialContact th,
+#tutorialContact a {
+    color: #fff4A3;
+}
+
+#tutorialContact table span {
+    color: white;
+    font-size: 18px;
+    padding: 2px 0px;
+}
+
+#tutorialContact small {
+    color: #ddd;
+    font-size: 15px;
+    padding: 2px 0px;
+}
+
+#tutorialContact table span:hover {
+    color: black;
+    background-color: #E7E9EB;
 }
 
 label:focus a {
@@ -138,7 +210,7 @@ padding: 8px 16px;
 }
 
 .imagePlus {
-    content: url("plus.png");
+    content: url("image/plus.png");
     width: 12px;
 
     padding: 0px 10px;
@@ -149,7 +221,7 @@ padding: 8px 16px;
 }
 
 .imageCart {
-    content: url("cart.png");
+    content: url("image/cart.png");
     width: 16px;
 
     padding: 0ch 10px;
@@ -160,7 +232,7 @@ padding: 8px 16px;
 }
 
 .imageTeacher {
-    content: url("Teachers.png");
+    content: url("image/Teachers.png");
     width: 15px;
 
     padding: 0px 10px;
@@ -171,7 +243,7 @@ padding: 8px 16px;
 }
 
 .imageSpace {
-    content: url("space.png");
+    content: url("image/space.png");
     width: 18px;
 
     padding: 0px 10px;
@@ -208,7 +280,7 @@ padding: 8px 16px;
 }
 
 .imageNavBar {
-    content: url("navBarIcon.png");
+    content: url("image/navBarIcon.png");
     width: 38px;
     margin: 0;
     padding: 6px;
@@ -217,7 +289,7 @@ padding: 8px 16px;
 
 .imageNavBar:hover {
 
-    content: url("navBarIconHover.png");
+    content: url("image/navBarIconHover.png");
 
 }
 
@@ -267,7 +339,7 @@ body {
 }
 
 .adjustImageNavBar {
-    content: url("adjust.png");
+    content: url("image/adjust.png");
     width: 20px;
     margin: 6px;
     padding: 6px;
@@ -360,7 +432,7 @@ body {
     /* margin-top: 10px; */
     height: 500px;
 
-    background-image: url("lynx_in_space.webp"), url("background_in_space.webp");
+    background-image: url("image/lynx_in_space.webp"), url("image/background_in_space.webp");
     background-repeat: no-repeat, repeat;
     background-position: 90% 60%, center;
     padding: 90px auto;
@@ -809,29 +881,41 @@ body {
 
 }
 
+
 .redCard-large {
     padding: 20px;
-    background-color: #FFC0C7;
+    background-color: #eab1b9;
+    /* background-color: #FFC0C7; */
     border-radius: 5px;
     margin: 0px;
     width: 536.8px;
 
 
+}
+
+.redCard-large:hover {
+    background-color: #FFC0C7;
 }
 
 .yellowCard-large {
     padding: 20px;
-    background-color: #fff4A3;
+    background-color: #eae098;
+    /* background-color: #fff4A3; */
     border-radius: 5px;
     margin: 0px;
     width: 536.8px;
 
 
+}
+
+.yellowCard-large:hover {
+    background-color: #fff4A3;
 }
 
 .seainwCard-large {
     padding: 20px;
-    background-color: #96d4d4;
+    background-color: #8bc3c4;
+    /* background-color: #96d4d4; */
     border-radius: 5px;
     margin: 0px;
     width: 536.8px;
@@ -839,12 +923,21 @@ body {
 
 }
 
+.seainwCard-large:hover {
+    background-color: #96d4d4;
+}
+
 .pajeSeainCard-large {
     padding: 20px;
-    background-color: #D9EEE1;
+    background-color: #dfd9d8;
+    /* background-color: #D9EEE1; */
     border-radius: 5px;
     margin: 0px;
     width: 536.8px;
+}
+
+.pajeSeainCard-large:hover {
+    background-color: #F3ECEA;
 }
 
 .langSummaryTableSecond {
@@ -853,43 +946,63 @@ body {
 
 .redCard {
     padding: 24px;
-    background-color: #FFC0C7;
+    background-color: #eab1b9;
     border-radius: 5px;
     margin: 0px;
     width: 200px;
+}
+
+.redCard:hover {
+    background-color: #FFC0C7;
 }
 
 .yellowCard {
     padding: 24px;
-    background-color: #fff4A3;
+    background-color: #eae098;
     border-radius: 5px;
     margin: 0px;
     width: 200px;
+}
+
+.yellowCard:hover {
+    background-color: #fff4A3;
 }
 
 .seainCard {
     padding: 24px;
-    background-color: #96d4d4;
+    background-color: #8bc3c4;
     border-radius: 5px;
     margin: 0px;
     width: 200px;
+}
+
+.seainCard:hover {
+    background-color: #96d4d4;
 }
 
 .pajeCard {
     padding: 24px;
-    background-color: #F3ECEA;
+    background-color: #dfd9d8;
     border-radius: 5px;
     margin: 0px;
     width: 200px;
 
 }
 
+.pajeCard:hover {
+    background-color: #F3ECEA;
+}
+
 .pajeSeainCard {
     padding: 24px;
-    background-color: #D9EEE1;
+    background-color: #c8dbd0;
     border-radius: 5px;
     margin: 0px;
     width: 200px;
+}
+
+.pajeSeainCard:hover {
+    background-color: #D9EEE1;
 }
 
 .redDot {
@@ -996,7 +1109,7 @@ body {
 }
 
 #animationImg {
-    content: url("codeeditor.webp");
+    content: url("image/codeeditor.webp");
     width: 815px;
     margin: -5px 10px;
 
@@ -1004,7 +1117,7 @@ body {
 
 
 #nextImage:checked~#animationImg {
-    content: url("best2.webp");
+    content: url("image/best2.webp");
 }
 
 a#frontBtn:hover {
@@ -1056,6 +1169,78 @@ a#frontBtn:hover {
 
 }
 
+#elvenSectionContent {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 80px;
+    background-color: #282A35;
+
+}
+
+#elvenSectionContent h1 {
+    color: white;
+    font-size: 64px;
+    margin-bottom: 10px;
+    font-family: Source Sans Pro, sans-serif;
+}
+
+#elvenSectionContent h3 {
+    color: white;
+    font-size: 24px;
+    font-family: Source Sans Pro, sans-serif;
+    margin: 20px;
+}
+
+#elvenSectionContent a {
+    color: #FFC0C7;
+    text-decoration: none;
+}
+
+#elvenSectionContent .greenBtn {
+    margin: 20px;
+    margin-top: 31px;
+    width: 300px;
+    font-size: 21px;
+    font-family: Source Sans Pro, sans-serif;
+
+}
+
+#twelvSection {
+    padding: 20px;
+    background-color: #D9EEE1;
+    padding-bottom: 50px;
+}
+
+#twelvSectionContent {
+    /* padding: 0px 200px; */
+}
+
+#twelvSectionContent table {
+    border-spacing: 50px 20px;
+}
+
+#twelvSectionContent table h1 {
+    font-size: 65px;
+    font-family: Source Sans Pro, sans-serif;
+    margin: 0px 0px 20px;
+}
+
+#twelvSectionContent table h4:nth-child(2) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#twelvSectionContent table h4:nth-child(3) {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#twelvSectionContent table h4 {
+    font-size: 20px;
+    font-family: Source Sans Pro, sans-serif;
+    margin: 35px 0px 10px;
+}
+
 #footerPageContent {
     padding-top: 32px;
     background-image: url(lynx_landing.webp), url(background_in_space.webp);
@@ -1065,7 +1250,7 @@ a#frontBtn:hover {
 }
 
 #footerImage {
-    content: url("iconFooter.png");
+    content: url("image/iconFooter.png");
     width: 38px;
     margin: 0;
     padding: 6px;
